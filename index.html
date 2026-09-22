@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Class 11 Physical Education Notes</title>
+<style>
+*{box-sizing:border-box} body{margin:0;font-family:Arial,sans-serif;background:#f4f7fb;color:#172033}
+header{padding:34px 18px;background:linear-gradient(135deg,#182848,#4b6cb7);color:white;text-align:center}
+header h1{margin:0 0 8px;font-size:30px} header p{margin:0;opacity:.9}
+.container{max-width:900px;margin:25px auto;padding:0 16px}
+.search{width:100%;padding:15px 17px;border:1px solid #d8dfeb;border-radius:14px;font-size:16px;outline:none;margin-bottom:20px}
+.card{background:white;border-radius:18px;padding:22px;box-shadow:0 8px 25px rgba(30,50,90,.08);border:1px solid #e7ebf2}
+.badge{display:inline-block;background:#e9f0ff;color:#3157a6;padding:6px 10px;border-radius:999px;font-size:13px;font-weight:700}
+h2{margin:13px 0 8px;font-size:22px}.meta{color:#687386;margin-bottom:18px}
+.buttons{display:flex;gap:10px;flex-wrap:wrap}
+a{display:inline-block;text-decoration:none;padding:12px 17px;border-radius:11px;font-weight:700}
+.view{background:#3157a6;color:white}.download{background:#eef2f7;color:#24324a}
+.info{margin-top:22px;padding:17px;border-radius:14px;background:#fff;border-left:4px solid #3157a6;color:#4d5a70}
+footer{text-align:center;color:#778196;padding:30px 15px}
+@media(max-width:520px){header h1{font-size:25px}.card{padding:18px}.buttons a{width:100%;text-align:center}}
+</style>
+</head>
+<body>
+<header>
+  <h1>Class 11 Physical Education</h1>
+  <p>Chapter-wise Notes • Easy English • Exam Revision</p>
+</header>
+<main class="container">
+  <input class="search" id="search" placeholder="Search chapter..." oninput="filterChapters()">
+  <section class="card chapter" data-name="Changing Trends and Career in Physical Education">
+    <span class="badge">Chapter 1</span>
+    <h2>Changing Trends and Career in Physical Education</h2>
+    <div class="meta">Revision Notes • Important Points • Exam Questions • One-Page Revision</div>
+    <div class="buttons">
+      <a class="view" href="Physical_Education_Chapter_1_Revision_Notes_Enhanced.pdf" target="_blank">📖 View Notes</a>
+      <a class="download" href="Physical_Education_Chapter_1_Revision_Notes_Enhanced.pdf" download>⬇️ Download PDF</a>
+    </div>
+  </section>
+  <div class="info">More chapters can be added here later. This website is designed to work smoothly on phones.</div>
+</main>
+<footer>© 2026 Class 11 Physical Education Notes</footer>
+<script>
+function filterChapters(){
+ const q=document.getElementById('search').value.toLowerCase();
+ document.querySelectorAll('.chapter').forEach(c=>{
+   c.style.display=c.dataset.name.toLowerCase().includes(q)?'block':'none';
+ });
+}
+</script>
+</body>
+</html>
